@@ -43,5 +43,27 @@ const updateTicket=async(ticketId,data)=>{
  
   
 }
+const subscribeEvents=async(paylaod)=>{
+  try{
+    let service=paylaod.service
+    const data=paylaod.data
+   
+    switch(service){
+      case 'CREATE_TIKCET':
+        await createNotification(data)
+        break;
+        case 'SEND_BASIC_MAIL':
+          await sendBasicEmail(data)
+          break;
+          default:
+            console.log("No value given")
+            break;
+    }
+  }catch(error){
+    console.log(error)
+  }
+ 
+}
 
-module.exports={sendBasicEmail,fetchPendingEmails,createNotification,updateTicket}
+
+module.exports={sendBasicEmail,fetchPendingEmails,createNotification,updateTicket,subscribeEvents}

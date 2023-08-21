@@ -3,5 +3,8 @@ dotenv.config();
 module.exports={
     PORT:process.env.PORT,
     EMAIL_PASS:process.env.EMAIL_PASS,
-    EMAIL_ID:process.env.EMAIL_ID
+    EMAIL_ID:process.env.EMAIL_ID,
+    REMAINDER_BINDING_KEY:process.env.REMAINDER_BINDING_KEY,
+    MESSAGE_BROKER_URL:process.env.MESSAGE_BROKER_URL,
+    EXCHANGE_NAME:process.env.EXCHANGE_NAME
 }
