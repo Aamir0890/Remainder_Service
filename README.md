@@ -1,4 +1,4 @@
-# Welcome to Booking_service
+# Welcome to Remainder_service
 
 ## Project Setup
 -clone the git repository
