@@ -26,6 +26,12 @@
   
   and to connect to sql server run `npx sequelize db:migrate`
 
+
+# RabbitMq
+ - RabbitMQ is an open-source message-broker software that is used for inter-service communication.
+ - It recieves and store request from a service.It will store the request until the recieving service is down.Once the recieving service is online it will send the request to the corresponding service.
+ - Please refer to the RabbitMq site to know more (https://www.rabbitmq.com/tutorials/tutorial-one-javascript.html)
+
 ## DB Design
 
 -Reminder-A flight booking when succesfull will have  reciepentEmail-subject-content-status-NotificationTime
